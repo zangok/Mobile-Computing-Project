@@ -1,0 +1,38 @@
+{
+  "scope": "offline B1 selection",
+  "configuration": "fp16-reuse",
+  "gpu": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+  "torch": "2.7.1+cu126",
+  "cuda_build": "12.6",
+  "server_p50_ms": 52.5209,
+  "gpu_p50_ms": 48.59545707702637,
+  "evidence_sha256": {
+    "runs\\b1-windows-screen\\summary.json": "8d0cc229c59604e089e4feba1edb0fc415126cf5d22b50601017d97415f50d83",
+    "runs\\b1-windows-environment.txt": "48f07856e9e64766edeae060c82cd8a44e1eb74741f162a0f7962bd466af6423",
+    "runs\\b1-windows-screen\\fp16-reuse-timing.json": "51fe2fea5c109a6c7806e318ca2190247646b2f33fbc1ecae4c36828a1648548",
+    "runs\\b1-windows-screen\\fp16-reuse-quality.json": "9e08ca87c0793d3172365861bb1034fbf9f8bcf8ad93bb0acae35e987b70c3f0"
+  },
+  "application_files_sha256": {
+    "baseline.py": "d8168cb374b84dfc1dcf120edab5afb3668638a5e7aacd5015a9a0eeda524a43",
+    "pipeline.py": "066ee441ab47452091f91888aea4af9d9c036f8f16ea2d1ef05e9d95788dd818",
+    "server.py": "08319a728a693c5ec34b3dc7e794998cabea3a8539a0fb37fc550747d7a9aade",
+    "frame_tag.py": "0b503462d97de2544cada914077f6c3e080a9597a707cb10fbe66379db0354b5",
+    "quality.py": "8b280052fe7e6a2b9bb843e37a6436a57e0cff287bce8db16e06559232d7846e",
+    "validate_model.py": "e731e3d4cd867c5ce930fd7b0d308ef10148b2eabb7b441337bb4e0e39e7b00e",
+    "replay_preview.py": "229c9500aa8c536439f50b102401764b1bbcac31cfb44fa7f957109b7c3b4a3a",
+    "preview.html": "3309a710359b03587dbccb3f05dca1c9881f5b69be939efd621c937f8a216a7f",
+    "preview.js": "de2e504643c3531fd87ec5f0f3aaf699f936ec251d6ce10f77e00ad82f9be1a0",
+    "summarize_preview.py": "4c8f357451869916481e5fcad2067ff19e99e15254aa8576a0455369e61135cb",
+    "candidate_gate.py": "a701f091f8a75deb6667e991945a38dcfefb43d29a2b9e71b9a3a424de2c8326",
+    "requirements-server.txt": "4a363bb9e88a865c3167fb19d74f189e71b90596ff435de3aa46c657a8b522cf",
+    "protocol.json": "620d191fb30830c81e4233f4adb4fea0f24b5381655837e5cb7eacb11b29df45",
+    "development-clips.json": "b385e334aa155a3281a1ca6a646213da5f0f41acac7d07f37092a21e7bc9a03e"
+  },
+  "development_replay_sha256": "74464b4092cc5f09588c0448180305db88bcd2b0f123bde5ed4b814696caea77",
+  "fastdvdnet_files_sha256": {
+    "models.py": "ddc0a9173168167475e75300d35cee9aee787008a9e58a5e7c78e7e3520cc78e",
+    "fastdvdnet.py": "1a2d3d7ccbf7c440aee2c912549cfe6c1edceca9446946c806ac76872c47f85d",
+    "model_clipped_noise.pth": "8118974ac7defaa5037f73caf87e0cb53efcfa49ae77d55c05ab187f59e55949"
+  },
+  "source_snapshot_sha256": "29f13f00292d3be4a0ec68713b82a63cd1d17bf11a7ed2a9bc7bb8e7a3519bcf"
+}

@@ -1,0 +1,4 @@
+* text=auto eol=lf
+# Preserve the bytes hashed in the original baseline snapshot.
+b1-manifest.json -text whitespace=blank-at-eof,blank-at-eol,space-before-tab,cr-at-eol
+development-clips.json -text whitespace=blank-at-eof,blank-at-eol,space-before-tab,cr-at-eol

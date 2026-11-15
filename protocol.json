@@ -1,0 +1,48 @@
+{
+  "study": {
+    "baseline": ["B0", "B1"],
+    "optimization_conditions": ["N", "A"],
+    "sessions_per_condition": 3,
+    "candidate_limit_per_session": 5,
+    "minutes_per_session": 45
+  },
+  "workload": {
+    "width": 640,
+    "height": 360,
+    "tag_rows": 24,
+    "fps": 30,
+    "batch_size": 1,
+    "temporal_context": 5,
+    "noise_std_8bit": [10, 25, 50],
+    "development_seeds": [11, 12, 13],
+    "final_seeds": [0, 1, 2]
+  },
+  "timing": {
+    "model_warmup_calls": 200,
+    "stream_warmup_seconds": 10,
+    "candidate_timed_outputs": 200,
+    "candidate_replay_seconds": 30,
+    "final_gpu_runs": 5,
+    "final_gpu_minimum_outputs": 1000,
+    "final_replay_pairs": 5,
+    "final_replay_seconds": 60
+  },
+  "quality_limits": {
+    "mean_psnr_loss_db": 0.05,
+    "mean_ssim_loss": 0.001,
+    "per_clip_noise_psnr_loss_db": 0.10,
+    "per_clip_noise_ssim_loss": 0.002,
+    "fp32_atol": 0.0001,
+    "fp32_rtol": 0.001,
+    "fp16_atol": 0.001,
+    "fp16_rtol": 0.01
+  },
+  "candidate_limits": {
+    "min_server_median_reduction_fraction": 0.10
+  },
+  "deployment_targets": {
+    "min_delivery_percent": 97,
+    "max_preview_p95_ms": 200,
+    "practical_preview_p95_reduction_fraction": 0.10
+  }
+}

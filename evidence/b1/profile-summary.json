@@ -1,0 +1,59 @@
+{
+  "scope": "one warmed B1 window profiled separately from the five timing trials",
+  "cuda_event_categories": {
+    "kernel": {
+      "events": 322,
+      "sum_duration_ms": 45.300025999999995
+    },
+    "gpu_memcpy": {
+      "events": 2,
+      "sum_duration_ms": 1.3515050000000002
+    },
+    "gpu_memset": {
+      "events": 8,
+      "sum_duration_ms": 1.0847419999999999
+    }
+  },
+  "top_cuda_kernel_names_by_sum_duration": [
+    {
+      "name": "_ZN2at6native47batch_norm_transform_input_channels_last_kernelIN3c104HalfEfS3_Li4EEEvPKT_S6_PKT0_S9_PKT1_SC_PS4_iib",
+      "events": 52,
+      "sum_duration_ms": 6.817179999999997
+    },
+    {
+      "name": "_ZN2at6native29vectorized_elementwise_kernelILi4EZZZNS0_49_GLOBAL__N__97375e57_16_TensorCompare_cu_71e06f4e19launch_clamp_scalarERNS_18TensorIteratorBaseEN3c106ScalarES6_NS0_6detail11ClampLimitsEENKUlvE_clEvENKUlvE6_clEvEUlNS5_4HalfEE_St5arrayIPcLy2EEEEviT0_T1_",
+      "events": 53,
+      "sum_duration_ms": 6.440164999999998
+    },
+    {
+      "name": "_ZN2at6native18elementwise_kernelILi128ELi4EZNS0_22gpu_kernel_impl_nocastIZZZNS0_23direct_copy_kernel_cudaERNS_18TensorIteratorBaseEENKUlvE1_clEvENKUlvE8_clEvEUlN3c104HalfEE_EEvS4_RKT_EUliE_EEviT1_",
+      "events": 14,
+      "sum_duration_ms": 5.6644630000000005
+    },
+    {
+      "name": "sm86_xmma_fprop_implicit_gemm_f16f16_f16f32_f32_nhwckrsc_nhwc_tilesize128x64x32_stage4_warpsize2x2x1_g1_tensor16x8x16_t1r3s3_execute_kernel__5x_cudnn",
+      "events": 24,
+      "sum_duration_ms": 5.047645000000001
+    },
+    {
+      "name": "sm86_xmma_fprop_implicit_gemm_f16f16_f16f32_f32_nhwckrsc_nhwc_tilesize128x128x32_stage3_warpsize2x2x1_g1_tensor16x8x16_execute_kernel__5x_cudnn",
+      "events": 16,
+      "sum_duration_ms": 3.841611
+    },
+    {
+      "name": "_Z33convolve_common_engine_float_NHWCI6__halfS0_Li1024ELi5ELi5ELi3ELi3ELi3ELb1ELb0ELb0ELb0ELb0EEviiiPKT_S3_iPT0_25conv_kernel_common_paramsyyffbPKS4_S8_bb",
+      "events": 12,
+      "sum_duration_ms": 3.815277
+    },
+    {
+      "name": "sm80_xmma_fprop_implicit_gemm_f16f16_f16f32_f32_nhwckrsc_nhwc_tilesize128x32x32_stage4_warpsize4x1x1_g1_tensor16x8x16_execute_kernel__5x_cudnn",
+      "events": 4,
+      "sum_duration_ms": 3.02779
+    },
+    {
+      "name": "_Z20nhwcAddPaddingKernelI6__halfS0_fLb1EL21cudnnKernelDataType_t0EEviiiiiiiiPKT_PT0_iiiiT1_S7_N5cudnn15reduced_divisorES9_S9_",
+      "events": 8,
+      "sum_duration_ms": 2.680739
+    }
+  ]
+}

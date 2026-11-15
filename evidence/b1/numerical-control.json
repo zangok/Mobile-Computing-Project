@@ -1,0 +1,140 @@
+{
+  "configuration": "fp16-reuse",
+  "device": "cuda",
+  "torch": "2.7.1+cu126",
+  "atol": 0.001,
+  "rtol": 0.01,
+  "reference_files_sha256": {
+    "models.py": "ddc0a9173168167475e75300d35cee9aee787008a9e58a5e7c78e7e3520cc78e",
+    "fastdvdnet.py": "1a2d3d7ccbf7c440aee2c912549cfe6c1edceca9446946c806ac76872c47f85d",
+    "model_clipped_noise.pth": "8118974ac7defaa5037f73caf87e0cb53efcfa49ae77d55c05ab187f59e55949"
+  },
+  "candidate_files_sha256": {
+    "models.py": "ddc0a9173168167475e75300d35cee9aee787008a9e58a5e7c78e7e3520cc78e",
+    "fastdvdnet.py": "1a2d3d7ccbf7c440aee2c912549cfe6c1edceca9446946c806ac76872c47f85d",
+    "model_clipped_noise.pth": "8118974ac7defaa5037f73caf87e0cb53efcfa49ae77d55c05ab187f59e55949"
+  },
+  "cases": [
+    {
+      "case": "black-320x180",
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "values_outside_tolerance": 0
+    },
+    {
+      "case": "white-320x180",
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "values_outside_tolerance": 0
+    },
+    {
+      "case": "random-320x180-sigma-10",
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "values_outside_tolerance": 0
+    },
+    {
+      "case": "random-320x180-sigma-50",
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "values_outside_tolerance": 0
+    },
+    {
+      "case": "black-640x360",
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "values_outside_tolerance": 0
+    },
+    {
+      "case": "white-640x360",
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "values_outside_tolerance": 0
+    },
+    {
+      "case": "random-640x360-sigma-10",
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "values_outside_tolerance": 0
+    },
+    {
+      "case": "random-640x360-sigma-50",
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "values_outside_tolerance": 0
+    },
+    {
+      "case": "black-960x540",
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "values_outside_tolerance": 0
+    },
+    {
+      "case": "white-960x540",
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "values_outside_tolerance": 0
+    },
+    {
+      "case": "random-960x540-sigma-10",
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "values_outside_tolerance": 0
+    },
+    {
+      "case": "random-960x540-sigma-50",
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "values_outside_tolerance": 0
+    },
+    {
+      "case": "black-321x181",
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "values_outside_tolerance": 0
+    },
+    {
+      "case": "white-321x181",
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "values_outside_tolerance": 0
+    },
+    {
+      "case": "random-321x181-sigma-10",
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "values_outside_tolerance": 0
+    },
+    {
+      "case": "random-321x181-sigma-50",
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "values_outside_tolerance": 0
+    },
+    {
+      "case": "development-blackswan",
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "values_outside_tolerance": 0
+    },
+    {
+      "case": "development-bmx-trees",
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "values_outside_tolerance": 0
+    },
+    {
+      "case": "development-camel",
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "values_outside_tolerance": 0
+    },
+    {
+      "case": "development-drift-chicane",
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "values_outside_tolerance": 0
+    }
+  ],
+  "passed": true
+}

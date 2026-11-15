@@ -1,0 +1,198 @@
+{
+  "scope": "pre-experiment repeatability pilot",
+  "codec": "VP8",
+  "replay_sha256": "74464b4092cc5f09588c0448180305db88bcd2b0f123bde5ed4b814696caea77",
+  "warmup_seconds": 10,
+  "trials": [
+    {
+      "trial": 1,
+      "pair": 1,
+      "mode": "b1",
+      "scored_seconds": 30,
+      "submitted": 900,
+      "displayed": 140,
+      "delivery_percent": 15.555555555555555,
+      "preview_p95_ms": 360
+    },
+    {
+      "trial": 1,
+      "pair": 1,
+      "mode": "b1",
+      "scored_seconds": 60,
+      "submitted": 1800,
+      "displayed": 543,
+      "delivery_percent": 30.166666666666668,
+      "preview_p95_ms": 388
+    },
+    {
+      "trial": 2,
+      "pair": 1,
+      "mode": "passthrough",
+      "scored_seconds": 30,
+      "submitted": 900,
+      "displayed": 356,
+      "delivery_percent": 39.55555555555556,
+      "preview_p95_ms": 229
+    },
+    {
+      "trial": 2,
+      "pair": 1,
+      "mode": "passthrough",
+      "scored_seconds": 60,
+      "submitted": 1800,
+      "displayed": 1126,
+      "delivery_percent": 62.55555555555556,
+      "preview_p95_ms": 345
+    },
+    {
+      "trial": 3,
+      "pair": 2,
+      "mode": "passthrough",
+      "scored_seconds": 30,
+      "submitted": 890,
+      "displayed": 27,
+      "delivery_percent": 3.033707865168539,
+      "preview_p95_ms": 9648
+    },
+    {
+      "trial": 3,
+      "pair": 2,
+      "mode": "passthrough",
+      "scored_seconds": 60,
+      "submitted": 1790,
+      "displayed": 365,
+      "delivery_percent": 20.391061452513966,
+      "preview_p95_ms": 8077
+    },
+    {
+      "trial": 4,
+      "pair": 2,
+      "mode": "b1",
+      "scored_seconds": 30,
+      "submitted": 900,
+      "displayed": 243,
+      "delivery_percent": 27.0,
+      "preview_p95_ms": 335
+    },
+    {
+      "trial": 4,
+      "pair": 2,
+      "mode": "b1",
+      "scored_seconds": 60,
+      "submitted": 1800,
+      "displayed": 650,
+      "delivery_percent": 36.111111111111114,
+      "preview_p95_ms": 317
+    },
+    {
+      "trial": 5,
+      "pair": 3,
+      "mode": "b1",
+      "scored_seconds": 30,
+      "submitted": 901,
+      "displayed": 300,
+      "delivery_percent": 33.29633740288568,
+      "preview_p95_ms": 333
+    },
+    {
+      "trial": 5,
+      "pair": 3,
+      "mode": "b1",
+      "scored_seconds": 60,
+      "submitted": 1801,
+      "displayed": 706,
+      "delivery_percent": 39.20044419766796,
+      "preview_p95_ms": 347
+    },
+    {
+      "trial": 6,
+      "pair": 3,
+      "mode": "passthrough",
+      "scored_seconds": 30,
+      "submitted": 900,
+      "displayed": 71,
+      "delivery_percent": 7.888888888888889,
+      "preview_p95_ms": 5928
+    },
+    {
+      "trial": 6,
+      "pair": 3,
+      "mode": "passthrough",
+      "scored_seconds": 60,
+      "submitted": 1800,
+      "displayed": 608,
+      "delivery_percent": 33.77777777777778,
+      "preview_p95_ms": 5514
+    }
+  ],
+  "aggregate": [
+    {
+      "mode": "b1",
+      "scored_seconds": 30,
+      "runs": 3,
+      "delivery_percent": {
+        "min": 15.555555555555555,
+        "median": 27.0,
+        "max": 33.29633740288568,
+        "runs": 3
+      },
+      "preview_p95_ms": {
+        "min": 333,
+        "median": 335,
+        "max": 360,
+        "runs": 3
+      }
+    },
+    {
+      "mode": "passthrough",
+      "scored_seconds": 30,
+      "runs": 3,
+      "delivery_percent": {
+        "min": 3.033707865168539,
+        "median": 7.888888888888889,
+        "max": 39.55555555555556,
+        "runs": 3
+      },
+      "preview_p95_ms": {
+        "min": 229,
+        "median": 5928,
+        "max": 9648,
+        "runs": 3
+      }
+    },
+    {
+      "mode": "b1",
+      "scored_seconds": 60,
+      "runs": 3,
+      "delivery_percent": {
+        "min": 30.166666666666668,
+        "median": 36.111111111111114,
+        "max": 39.20044419766796,
+        "runs": 3
+      },
+      "preview_p95_ms": {
+        "min": 317,
+        "median": 347,
+        "max": 388,
+        "runs": 3
+      }
+    },
+    {
+      "mode": "passthrough",
+      "scored_seconds": 60,
+      "runs": 3,
+      "delivery_percent": {
+        "min": 20.391061452513966,
+        "median": 33.77777777777778,
+        "max": 62.55555555555556,
+        "runs": 3
+      },
+      "preview_p95_ms": {
+        "min": 345,
+        "median": 5514,
+        "max": 8077,
+        "runs": 3
+      }
+    }
+  ]
+}

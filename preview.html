@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Video denoising preview</title>
+  <style>
+    :root { color-scheme: dark; font-family: Inter, system-ui, sans-serif; background: #11171c; color: #edf1f3; }
+    body { margin: 0 auto; padding: 1.25rem; max-width: 62rem; }
+    h1 { margin: 0 0 1rem; font-size: 1.55rem; }
+    .toolbar { display: flex; gap: .75rem; align-items: center; flex-wrap: wrap; }
+    [hidden] { display: none !important; }
+    button { border: 0; border-radius: .5rem; padding: .75rem 1rem; font: inherit; font-weight: 650; }
+    #start { background: #a5e5d3; color: #10231e; }
+    #stop { background: #2a3740; color: #edf1f3; }
+    button:disabled { opacity: .5; }
+    #status { color: #bfced6; min-height: 1.5em; }
+    .previews { display: grid; gap: 1rem; grid-template-columns: repeat(auto-fit, minmax(min(19rem, 100%), 1fr)); }
+    figure { margin: 0; }
+    figcaption { margin-bottom: .4rem; }
+    .image { aspect-ratio: 16 / 9; overflow: hidden; background: #080c0e; border-radius: .55rem; }
+    video { display: block; width: 100%; height: 100%; object-fit: cover; }
+    #returned { height: 106.6667%; object-fit: fill; }
+    #stats { margin-top: 1rem; color: #bfced6; font-variant-numeric: tabular-nums; }
+  </style>
+</head>
+<body>
+  <h1>Video denoising preview</h1>
+  <div class="toolbar">
+    <button id="start" type="button">Start camera</button>
+    <button id="start-replay" type="button" disabled>Start replay</button>
+    <button id="stop" type="button" disabled>Stop</button>
+    <button id="save" type="button" disabled>Save diagnostics</button>
+  </div>
+  <p><label>Replay video <input id="replay-file" type="file" accept="video/*"></label></p>
+  <div class="toolbar" id="batch-controls" hidden>
+    <label>Sets <select id="batch-pairs">
+      <option value="2">2</option><option value="3" selected>3</option><option value="5">5</option>
+    </select></label>
+    <button id="start-batch" type="button">Start paired replays</button>
+  </div>
+  <p id="batch-status" role="status"></p>
+  <p id="status" role="status">Ready</p>
+  <div class="previews">
+    <figure><figcaption>Original</figcaption><div class="image"><video id="camera" muted playsinline></video></div></figure>
+    <figure><figcaption id="return-label">Returned preview</figcaption><div class="image"><video id="returned" muted playsinline></video></div></figure>
+  </div>
+  <p id="stats"></p>
+  <p id="replay-progress"></p>
+  <p id="diagnostics" role="status"></p>
+  <script type="module" src="/preview.js"></script>
+</body>
+</html>

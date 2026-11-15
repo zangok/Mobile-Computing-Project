@@ -1,0 +1,103 @@
+{
+  "scope": "B1 offline reference with development quality evidence",
+  "configuration": "fp16-reuse",
+  "runtime": "native Windows CUDA",
+  "runs": 5,
+  "timed_outputs": 1000,
+  "warmup_outputs_per_run": 200,
+  "timing_clip": "drift-chicane",
+  "sigma_8bit": 25,
+  "seed": 11,
+  "timing": {
+    "server_window_ms": {
+      "pooled_p50_ms": 57.636449999999996,
+      "pooled_p95_ms": 63.996,
+      "trial_p50_ms": [
+        61.30225,
+        60.902,
+        55.361599999999996,
+        56.016149999999996,
+        57.980199999999996
+      ],
+      "trial_p95_ms": [
+        65.2871,
+        64.4494,
+        58.0384,
+        58.7465,
+        62.7764
+      ]
+    },
+    "gpu_region_ms": {
+      "pooled_p50_ms": 47.231998443603516,
+      "pooled_p95_ms": 48.59699249267578,
+      "trial_p50_ms": [
+        47.05062484741211,
+        47.09427261352539,
+        47.24838447570801,
+        47.38969421386719,
+        47.338497161865234
+      ],
+      "trial_p95_ms": [
+        47.39891052246094,
+        47.61804962158203,
+        48.86528015136719,
+        49.0885124206543,
+        48.0428466796875
+      ]
+    }
+  },
+  "gpu_state_samples": [
+    {
+      "sample": "gpu-before-1",
+      "gpu": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+      "driver": "581.29",
+      "temperature_c": 39,
+      "power": "3.15 W"
+    },
+    {
+      "sample": "gpu-before-2",
+      "gpu": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+      "driver": "581.29",
+      "temperature_c": 53,
+      "power": "28.93 W"
+    },
+    {
+      "sample": "gpu-before-3",
+      "gpu": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+      "driver": "581.29",
+      "temperature_c": 57,
+      "power": "31.28 W"
+    },
+    {
+      "sample": "gpu-before-4",
+      "gpu": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+      "driver": "581.29",
+      "temperature_c": 68,
+      "power": "69.65 W"
+    },
+    {
+      "sample": "gpu-before-5",
+      "gpu": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+      "driver": "581.29",
+      "temperature_c": 63,
+      "power": "29.24 W"
+    },
+    {
+      "sample": "gpu-after",
+      "gpu": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+      "driver": "581.29",
+      "temperature_c": 64,
+      "power": "22.02 W"
+    }
+  ],
+  "development_quality": {
+    "passed": true,
+    "evaluated_frames": 2304,
+    "mean_psnr_loss_db": 0.0002622578420978054,
+    "mean_ssim_loss": 3.8957546705788625e-05
+  },
+  "numerical_identity_control": {
+    "passed": true,
+    "cases": 20
+  }
+}

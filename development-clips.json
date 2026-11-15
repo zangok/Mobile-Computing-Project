@@ -1,0 +1,26 @@
+{
+  "source": "https://data.vision.ee.ethz.ch/csergi/share/davis/DAVIS-2017-trainval-480p.zip",
+  "split": "DAVIS 2017 480p validation",
+  "clips": [
+    {
+      "name": "blackswan",
+      "frames": 50,
+      "ordered_frame_sha256": "1ac44484d57643c96abcad150b2bd424b1e320b13220d604c636f96e59a4fdc5"
+    },
+    {
+      "name": "bmx-trees",
+      "frames": 80,
+      "ordered_frame_sha256": "c3534a92e8ef29842066b63e7a0ebe572135a98a292b05f33a64f19aef2a941d"
+    },
+    {
+      "name": "camel",
+      "frames": 90,
+      "ordered_frame_sha256": "bb2627670b9202e76d6dfc2560664ce451a29c9731c0cfeed7293c3cd8d1ca6a"
+    },
+    {
+      "name": "drift-chicane",
+      "frames": 52,
+      "ordered_frame_sha256": "24cfe3a1494f8f8be643ea3e29c61c5c8a2fb05ca2981957526de0cfc120f166"
+    }
+  ]
+}
